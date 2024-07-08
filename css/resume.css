@@ -1,0 +1,180 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    background-color: #fff;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 2em; 
+    background-color: #fff;
+  }
+
+/* 프로필 */
+header {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 240px;
+    margin-right: 20px;
+}
+
+.contact {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.name {
+    font-size: 30px;
+    color:  rgba(75, 192, 192, 1);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-size: 20px 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #000; /* 링크 색상 설정 */
+}
+
+.contact-info img {
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+    margin-right: 5px; /* 이미지 오른쪽 여백 설정 */
+    width: 20px; /* 이미지 너비 설정 */
+    height: 20px; /* 이미지 높이 설정 */
+}
+
+/* 스킬 */
+.skill-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.top{
+    font-size: 20px;
+    color: #808080;
+    margin-left: 20px;
+    text-align: left;
+    flex-shrink: 0;
+}
+.skill li::marker {
+    color: black; 
+}
+
+.skill li {
+    margin-bottom: 8px;
+    color: #888;
+}
+.bottom{
+    margin-left: 40px;
+}
+
+/* 프로젝트 */
+.project-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.des{
+    margin-left: 200px;
+}
+.project li::marker {
+    color: black; 
+}
+
+.project li {
+    margin-bottom: 8px;
+    color: #888;
+}
+
+.date-range {
+    font-size: 18px;
+    color: #808080;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 16px;
+    color: #888;
+}
+
+.sub img{
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+    margin-right: 5px; /* 이미지 오른쪽 여백 설정 */
+    width: 20px; /* 이미지 너비 설정 */
+    height: 20px; /* 이미지 높이 설정 */
+}
+
+.edu-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.etc-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+section{
+    margin: 10%;
+}
+
+.mainTitle{
+    color:  rgba(75, 192, 192, 1);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}
