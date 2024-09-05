@@ -72,7 +72,7 @@ body {
 }
 
 .main-content {
-    width: 70%;
+    width: 100%;
     padding: 20px;
 }
 
@@ -234,24 +234,23 @@ p {
 }
 
 /* 모바일 최적화 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .container {
-        flex-direction: column; /* 세로로 레이아웃 변경 */
+        flex-direction: column;
     }
 
     .sidebar {
-        width: 100%;
+        width: 95%;
         padding: 10px;
         text-align: center;
     }
 
     .main-content {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 
     .profile-picture {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -268,7 +267,6 @@ p {
 
     .contact-info {
         flex-direction: column;
-        align-items: center;
     }
 
     .contact-card {
@@ -284,7 +282,6 @@ p {
 
     .project-header {
         flex-direction: column;
-        text-align: center;
     }
 
     .des {
@@ -294,22 +291,14 @@ p {
     /* edu 섹션 모바일 최적화 */
     .edu-header {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .edu .content {
-        margin-left: 0;
-        text-align: center;
     }
 
     /* etc 섹션 모바일 최적화 */
     .etc-header {
         flex-direction: column;
-        text-align: center;
     }
 
-    .etc .content {
-        margin-left: 0;
-        text-align: center;
+    p {
+        margin-left: 20px;
     }
 }
