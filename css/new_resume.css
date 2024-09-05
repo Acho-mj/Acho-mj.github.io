@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    display: flex; /* Flexbox를 사용하여 이미지와 텍스트를 나란히 배치합니다 */
+    align-items: center; /* 세로로 중앙 정렬 */
+    margin-bottom: 20px; /* 섹션과 나머지 콘텐츠 사이의 공간 */
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    margin-right: 20px; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.profile-info {
+    max-width: 400px; /* 텍스트 박스의 최대 너비를 설정하여 가독성 확보 */
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+.profile-info h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+.sidebar {
+    width: 20%;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar ul {
+    font-size: medium;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+    color: #bebebe;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header .contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.33% - 20px); 
+    margin-right: 10px;
+}
+
+.contact-card:last-child {
+    margin-right: 0;
+}
+
+.contact-card img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.main-content .section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.profile {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.etc {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.edu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* 프로젝트 */
+.project-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.des{
+    margin-left: 200px;
+}
+.project li::marker {
+    color: black; 
+}
+
+.project li {
+    margin-bottom: 8px;
+    color: #888;
+}
+
+.date-range {
+    font-size: 18px;
+    color: #808080;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 16px;
+    color: #888;
+}
+
+.sub img{
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+    margin-right: 5px; /* 이미지 오른쪽 여백 설정 */
+    width: 20px; /* 이미지 너비 설정 */
+    height: 20px; /* 이미지 높이 설정 */
+}
+
+.edu-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.etc-header{
+    display: flex;
+    margin-bottom: 20px;
+}
