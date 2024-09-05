@@ -232,3 +232,84 @@ p {
     display: flex;
     margin-bottom: 20px;
 }
+
+/* 모바일 최적화 */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 세로로 레이아웃 변경 */
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .profile-info {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-card img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .des {
+        margin-left: 0;
+    }
+
+    /* edu 섹션 모바일 최적화 */
+    .edu-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu .content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* etc 섹션 모바일 최적화 */
+    .etc-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etc .content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
